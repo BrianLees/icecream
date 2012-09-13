@@ -1,0 +1,42 @@
+%h1 Icecream Delivery Information
+
+%body
+  %p
+    %label Route: 
+    %label#route #{@route}
+  %p
+    %label Driver: 
+    %label#driver #{@driver}
+  %p
+    %label Manager Notes: 
+    %textarea#manager_notes= "#{@driver} needs to quit drinking."
+  %p
+    %label Item 1: 
+    %label#item_1 #{@item_1}
+  %p
+    %label Item 2: 
+    %label#item_2 #{@item_2}
+  %p
+    %label Item 3: 
+    %label#item_3 #{@item_3}
+  %p
+    %label Item 4: 
+    %label#item_4 #{@item_4}
+
+  %select
+    %option This
+    %option That
+    %option Other
+
+  %br
+  %br
+
+  %li#link_main_page
+    %a{:href => "/main_page_back"} Home
+
+  %br
+  %br
+  %br
+  %br
+  %li#link_logout
+    %a{:href => "/login"} Logout

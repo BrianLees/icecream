@@ -1,0 +1,17 @@
+%h1 Icecream Delivery Information
+%h2 Login
+
+%form{:action => "/main_page", :method => "get"}
+  %body
+    %p
+      %label Username: 
+      %input{:name => "username"}
+    %p
+      %label Password: 
+      %input{:type => "password", :name => "password"}
+    %p
+      %input{:type => "submit"}
+    %br
+    %br
+    %p
+      %label= @message

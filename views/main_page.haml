@@ -1,0 +1,74 @@
+%h3 JimBob's Icecream Kinda Store
+%form{:action => "/main_page", :method => "post"}
+
+  %br
+  %br
+
+  %label Route: 
+  %select#route{:name => "route"}
+    %option{:value => "Broad"} Broad
+    %option{:value => "Lane"} Lane
+    %option{:value => "N High"} N High
+    %option{:value => "S High"} S High
+
+  %br
+  %br
+
+  %label Driver: 
+  %select#driver{:name => "driver"}
+    %option{:value => "Jan"} Jan
+    %option{:value => "Ted"} Ted
+    %option{:value => "Tom"} Tom
+    %option{:value => "Zeekster"} Zeekster
+
+  %br
+  %br
+
+  %label Item 1: 
+  %select#item_1{:name => "item_1"}
+    %option{:value => "Rocket Pop"} Rocket Pop
+    %option{:value => "Icecream Sandwich"} Icecream Sandwich
+    %option{:value => "Fudge Bar"} Fudge Bar
+    %option{:value => "Chopped Liver"} Chopped Liver
+
+  %br
+  %br
+
+  %label Item 2: 
+  %select#item_2{:name => "item_2"}
+    %option{:value => "Rocket Pop"} Rocket Pop
+    %option{:value => "Icecream Sandwich"} Icecream Sandwich
+    %option{:value => "Fudge Bar"} Fudge Bar
+    %option{:value => "Chopped Liver"} Chopped Liver
+
+  %br
+  %br
+
+  %label Item 3: 
+  %select#item_3{:name => "item_3"}
+    %option{:value => "Rocket Pop"} Rocket Pop
+    %option{:value => "Icecream Sandwich"} Icecream Sandwich
+    %option{:value => "Fudge Bar"} Fudge Bar
+    %option{:value => "Chopped Liver"} Chopped Liver
+
+  %br
+  %br
+
+  %label Item 4: 
+  %select#item_4{:name => "item_4"}
+    %option{:value => "Rocket Pop"} Rocket Pop
+    %option{:value => "Icecream Sandwich"} Icecream Sandwich
+    %option{:value => "Fudge Bar"} Fudge Bar
+    %option{:value => "Chopped Liver"} Chopped Liver
+
+  %br
+  %br
+
+  %input{:type => "submit"}
+
+  %br
+  %br
+  %br
+  %br
+  %li#link_logout
+    %a{:href => "/login"} Logout
