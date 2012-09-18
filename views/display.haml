@@ -1,37 +1,38 @@
-%h1 Icecream Delivery Information
+%h1{:align => "center"} JimBob's Icecream Delivery
 
 %body
-  %p
+  %p{:align => "center"}
     %label Route: 
     %label#route #{@route}
-  %p
+  %p{:align => "center"}
     %label Driver: 
     %label#driver #{@driver}
-  %p
+  %p{:align => "center"}
     %label Manager Notes: 
     %textarea#manager_notes= "#{@driver} needs to quit drinking."
-  %p
+  %p{:align => "center"}
     %label Item 1: 
     %label#item_1 #{@item_1}
-  %p
+  %p{:align => "center"}
     %label Item 2: 
     %label#item_2 #{@item_2}
-  %p
+  %p{:align => "center"}
     %label Item 3: 
     %label#item_3 #{@item_3}
-  %p
+  %p{:align => "center"}
     %label Item 4: 
     %label#item_4 #{@item_4}
 
-  %select
-    %option This
-    %option That
-    %option Other
+  %p{:align => "center"}
+    %select
+      %option This
+      %option That
+      %option Other
 
   %br
   %br
 
-  %li#link_main_page
+  %li#link_main_page{:align => "center"}
     %a{:href => "/main_page_back"} Home
 
   %br
