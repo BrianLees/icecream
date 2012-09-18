@@ -1,0 +1,3 @@
+This version has...
+  - NO IDs on the text fields on the login page
+  - Select lists all have NO IDs and the same class
