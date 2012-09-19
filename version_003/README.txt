@@ -1,4 +1,7 @@
 This version has...
-  - Select list 3 has all the same options except for the 1 Automation is looking
-for, Automation will NOT hit this bug. (Currently)
+  - Select list 3 has all the same options
+
+Task:
+  - Add a test that verifies the item_n dropdowns
+
 
