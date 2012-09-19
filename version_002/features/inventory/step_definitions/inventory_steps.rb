@@ -18,7 +18,3 @@ end
 Then /^I should be able to send out a truck$/ do
   on_page(InventoryPage).submit
 end
-
-When /^I load the truck$/ do
-  on_page(InventoryPage).load_the_truck
-end

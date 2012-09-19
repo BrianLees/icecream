@@ -10,15 +10,6 @@ class InventoryPage
   button(:submit, :name => 'submit')
   link(:logout, :name => 'logout')
 
-  DEFAULT_DATA = {
-    :route => 'Broad',
-    :driver => 'Jan',
-    :item_1 => 'Rocket Pop',
-    :item_2 => 'Rocket Pop',
-    :item_3 => 'Rocket Pop',
-    :item_4 => 'Rocket Pop'
-  }
-
   def select_route(route)
     self.route = route
   end
@@ -32,13 +23,5 @@ class InventoryPage
     self.item_2 = item_2
     self.item_3 = item_3
     self.item_4 = item_4
-  end
-
-  def load_the_truck(data = {})
-    data = DEFAULT_DATA.merge(data)
-
-    data.each do |field,value|
-      self.send("#{field}=", value)
-    end
   end
 end
