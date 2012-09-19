@@ -5,6 +5,13 @@ Given /^I enter valid credentials$/ do
   end
 end
 
+Given /^I enter invalid credentials$/ do
+  visit_page LoginPage do |page|
+    page.user_name = 'john'
+    page.password = 'doe'
+  end
+end
+
 When /^I login to the site$/ do
   on_page(LoginPage).login
 end
@@ -15,4 +22,8 @@ end
 
 Given /^I am logged into the Ice Cream site$/ do
   visit_page(LoginPage).login_with_credentials(:login_name => 'brain', :password => 'brain')
+end
+
+Then /^I see the message "([^"]*)"$/ do |message|
+  @browser.text.include? (message)
 end
