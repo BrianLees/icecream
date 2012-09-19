@@ -1,0 +1,7 @@
+Nice to haves:
+-read out of the load in a pane on the inventory page
+-more meaningful titles and descriptive text to key off of possibly
+
+
+Need to haves:
+-break out examples into before and afters
