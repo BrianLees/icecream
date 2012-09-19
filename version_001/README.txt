@@ -1,3 +1,6 @@
 This version has...
-  - NO IDs on the text fields on the login page
-  - Select lists all have NO IDs and the same class
+  - NO IDs on the login page submit button
+
+Task:
+  - Add name = "login"
+  - Tests should both go green
