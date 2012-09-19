@@ -11,9 +11,3 @@ Feature: Select a basic inventory for a truck
     And   I assign a driver
     And   I fill the inventory
     Then  I should be able to send out a truck
-
-  @automatic_load
-  Scenario: Test auto loading
-    Given I am logged into the Ice Cream site
-    When  I load the truck
-    Then  I should be able to send out a truck
